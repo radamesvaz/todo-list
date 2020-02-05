@@ -8,23 +8,7 @@ import './App.css';
 class App extends Component{
 
 state = {
-  todos: [
-    {
-      id: uuid.v4(),
-      title: 'Take out the trash',
-      completed: false
-    },
-    {
-      id: uuid.v4(),
-      title: 'Dinner with Emely',
-      completed: false
-    },
-    {
-      id: uuid.v4(),
-      title: 'Programming',
-      completed: false
-    }
-  ]
+  todos: []
 }
 
 // Toggle Complete
