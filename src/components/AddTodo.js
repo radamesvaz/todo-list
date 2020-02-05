@@ -6,12 +6,13 @@ state = {
     title: ''
 }
 
-onChange = (event) => this.setState({ title: event.target.value });
+onChange = (event) => this.setState({ [event.target.name]: event.target.value });
 
 onSubmit = (event) => {
     event.preventDefault();
     this.props.addTodo(this.state.title);
-    this.setState({ title: ''})
+    this.setState({ title: '' });
+    event.target.reset();
 }
 
     render(){
